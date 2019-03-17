@@ -7,9 +7,13 @@ class Login:
 
 class OAuth:
     def on_get(self, request, response):
-        breakpoint()
+        import pdb; pdb.set_trace()
+        print(request)
+        print(response)
     def on_post(self, request, response):
-        breakpoint()
+        import pdb; pdb.set_trace()
+        print(request)
+        print(response)
 
 application = falcon.API()
 application.add_route('/login', Login())
